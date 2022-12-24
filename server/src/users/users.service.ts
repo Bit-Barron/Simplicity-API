@@ -1,23 +1,12 @@
 import { Injectable } from '@nestjs/common';
 
-
-const names  = [
-  "new",
-  "old",
-  "big",
-  "small",
-  "medium",
-  "tiny",
-
-]
-
 const users = [
   {
     id: 1,
-    name: 'John Does',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: `${name}${Math.floor(Math.random() * 1000)}`,
+    name: 'John Doe',
+    email: 'doe@gmail.com',
+    website: 'https://www.doe.com',
+    username: `doe${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'GENTLE RAIN DRIVE, MARANA',
@@ -28,9 +17,9 @@ const users = [
   {
     id: 2,
     name: 'Jane',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'jane012',
+    email: 'jane@gmail.com',
+    website: 'https://www.jane.com',
+    username: `Jane${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'MELODY DRIVE',
@@ -41,9 +30,9 @@ const users = [
   {
     id: 3,
     name: 'Tomas',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'tomasshell',
+    email: 'tomas@gmail.com',
+    website: 'https://www.tomas.com',
+    username: `Tomas${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'CHARDONNAY DRIVE',
@@ -54,9 +43,9 @@ const users = [
   {
     id: 4,
     name: 'victor',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'victorBig',
+    email: 'victor@gmail.com',
+    website: 'https://www.victor.com',
+    username: `Victor${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'SUNFLOWER',
@@ -67,9 +56,9 @@ const users = [
   {
     id: 5,
     name: 'jose',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'luisNew',
+    email: 'jose@gmail.com',
+    website: 'https://www.luis.com',
+    username: `Jose${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'THREE STARS ROAD',
@@ -78,34 +67,36 @@ const users = [
     },
   },
   {
-    id: 6,
+    id: 3,
     name: 'luis',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'luisNew',
+    email: 'luis@gmail.com',
+    website: 'https://www.luis.com',
+    username: `luis${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'THREE STARS ROAD',
       city: 'EDMOND OK',
       suite: '098',
     },
-  },{
-    id: 7,
-    name: 'luis',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
-    username: 'luisNew',
+  },
+  {
+    id: 3,
+    name: 'vic',
+    email: 'vic@gmail.com',
+    website: 'https://www.vic.com',
+    username: `vic${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'THREE STARS ROAD',
       city: 'EDMOND OK',
       suite: '098',
     },
-  },{
-    id: 8,
+  },
+  {
+    id: 3,
     name: 'luis',
-    email: `${name}@gmail.com`,
-    website: `https://www.${name}.com`,
+    email: 'luis@gmail.com',
+    website: 'https://www.luis.com',
     username: 'luisNew',
     createdAt: new Date(),
     addresses: {
@@ -115,6 +106,7 @@ const users = [
     },
   },
 ];
+
 @Injectable()
 export class UsersService {
   getAllUsers() {
