@@ -19,12 +19,12 @@
   <Navbar />
   <div class="">
     <div class="bg-[#182e6e] p-40">
-      <div class="text-6xl flex justify-center mb-20">Json PLACEHOLDER</div>
-      <div class="flex justify-center mt-5 text-2xl">Free fake api for testing and prototyping</div>
-      <div class="flex justify-center mt-5 text-xl">
+      <div class="text-6xl flex justify-center ml-32 mb-20">Json PLACEHOLDER</div>
+      <div class="flex justify-center mt-5 text-2xl ml-32">Free fake api for testing and prototyping</div>
+      <div class="flex justify-center mt-5 text-xl ml-32">
         Powered by Json Server + LowDB Tested with XV
       </div>
-      <div class="flex justify-center mt-5 text-sm mr-20">
+      <div class="flex justify-center mt-5 text-sm ml-32">
         As of Oct 2022, serving 1.7 billion request each month
       </div>
     </div>
@@ -44,7 +44,7 @@
     <div>
       <div class="text-center mt-20 mr-32 mb-4 text-3xl">When to use</div>
       <div class="text-center ml-[560px]">
-        ApiPlaceholder is a free online REST API that you can use whenever you need some fake data.
+       this Api placeholder is a free online REST API that you can use whenever you need some fake data.
         It can be in a README on <br />
         <span class="mr-20"
           >GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to

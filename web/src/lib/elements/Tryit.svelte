@@ -1,13 +1,7 @@
-<script>
-  import Router from 'svelte-spa-router';
-
-  let routes = {
-    ""
-  }
-
+<script lang="ts">
 </script>
 
-<div>
+<div class="">
   <h1 class="flex justify-center text-3xl mt-10 mr-64">Try it</h1>
   <div class="text-center ml-9 mt-3">Run this code here, in a console or from any site:</div>
   <div class="bg-[#222526] p-8 rounded-lg ml-[1120px] mt-4 mr-96">
