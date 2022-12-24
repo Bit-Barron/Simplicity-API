@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Body, Injectable } from '@nestjs/common';
 
 const users = [
   {
@@ -147,5 +147,13 @@ export class UsersService {
     return users.find(
       (user) => user.id === id && users.splice(users.indexOf(user), 1),
     );
+  }
+  createUser(body: any) {
+    const newUser = {
+      id: users.length + 1,
+      ...body,
+    }
+    users.push(newUser);
+    return newUser;
   }
 }
