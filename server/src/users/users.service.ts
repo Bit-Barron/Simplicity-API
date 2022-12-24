@@ -4,7 +4,7 @@ const users = [
   {
     id: 1,
     name: 'John Doe',
-    email: 'doe@gmail.com',
+    email: `${name}@gmail.com`,
     website: 'https://www.doe.com',
     username: 'doe',
     createdAt: new Date(),
@@ -17,7 +17,7 @@ const users = [
   {
     id: 2,
     name: 'Jane',
-    email: 'jane@gmail.com',
+    email: `${name}@gmail.com`,
     website: 'https://www.jane.com',
     username: 'jane012',
     createdAt: new Date(),
@@ -30,7 +30,7 @@ const users = [
   {
     id: 3,
     name: 'Tomas',
-    email: 'tomas@gmail.com',
+    email: `${name}@gmail.com`,
     website: 'https://www.tomas.com',
     username: 'tomasshell',
     createdAt: new Date(),
@@ -43,7 +43,7 @@ const users = [
   {
     id: 4,
     name: 'victor',
-    email: 'victor@gmail.com',
+    email: `${name}@gmail.com`,
     website: 'https://www.victor.com',
     username: 'victorBig',
     createdAt: new Date(),
@@ -54,7 +54,44 @@ const users = [
     },
   },
   {
-    id: 3,
+    id: 5,
+    name: 'jose',
+    email: `${name}@gmail.com`,
+    website: 'https://www.luis.com',
+    username: 'luisNew',
+    createdAt: new Date(),
+    addresses: {
+      street: 'THREE STARS ROAD',
+      city: 'EDMOND OK',
+      suite: '098',
+    },
+  },
+  {
+    id: 6,
+    name: 'luis',
+    email: 'luis@gmail.com',
+    website: 'https://www.luis.com',
+    username: 'luisNew',
+    createdAt: new Date(),
+    addresses: {
+      street: 'THREE STARS ROAD',
+      city: 'EDMOND OK',
+      suite: '098',
+    },
+  },{
+    id: 7,
+    name: 'luis',
+    email: 'luis@gmail.com',
+    website: 'https://www.luis.com',
+    username: 'luisNew',
+    createdAt: new Date(),
+    addresses: {
+      street: 'THREE STARS ROAD',
+      city: 'EDMOND OK',
+      suite: '098',
+    },
+  },{
+    id: 8,
     name: 'luis',
     email: 'luis@gmail.com',
     website: 'https://www.luis.com',
