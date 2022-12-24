@@ -2,7 +2,7 @@
   import Navbar from '$lib/elements/Navbar.svelte';
   import Tryit from '$lib/elements/Tryit.svelte';
 
-  let toggle = false;
+    let showclass = false
 </script>
 
 <div>
@@ -21,7 +21,10 @@
     <Tryit />
     <div class="flex justify-center">
       <button
-        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-6 mr-52"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-6 mr-52 {showclass
+          ? 'text-green-500'
+          : 'text-red-500'}}"
+        on:click={() => (showclass = !showclass)}
       >
         Run script
       </button>
@@ -30,9 +33,9 @@
     <div>
       <div class="text-center mt-20 mr-40 mb-4 text-3xl">When to use</div>
       <div class="text-center ml-[520px]">
-        ApiPlaceholder is a free online REST API that you can use whenever you need some fake data. It can
-        be in a README on <br /> GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow,
-        ...or simply to test things locally.
+        ApiPlaceholder is a free online REST API that you can use whenever you need some fake data.
+        It can be in a README on <br /> GitHub, for a demo on CodeSandbox, in code examples on Stack
+        Overflow, ...or simply to test things locally.
       </div>
     </div>
     <div>
