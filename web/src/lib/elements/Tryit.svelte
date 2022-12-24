@@ -1,7 +1,7 @@
 <div>
   <h1 class="flex justify-center text-3xl mt-10 mr-64">Try it</h1>
   <div class="text-center ml-9 mt-3">Run this code here, in a console or from any site:</div>
-  <div class="bg-[#222526] p-6 rounded-lg w-96 ml-[1120px] mt-4">
+  <div class="bg-[#222526] p-8 rounded-lg ml-[1120px] mt-4 mr-96">
     <div>
       <span class="text-orange-700">fetch</span><span class="text-green-400"
         >('http://localhost:3000/users/1')</span

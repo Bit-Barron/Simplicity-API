@@ -82,5 +82,4 @@ export class UsersService {
       (user) => user.id === id && users.splice(users.indexOf(user), 1),
     );
   }
-  updateUserById(id: number) {}
 }

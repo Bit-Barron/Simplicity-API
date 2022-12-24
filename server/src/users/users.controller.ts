@@ -1,4 +1,11 @@
-import { Controller, Get, Param, ParseIntPipe, Delete, Put } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Param,
+  ParseIntPipe,
+  Delete,
+  Put,
+} from '@nestjs/common';
 import { UsersService } from './users.service';
 
 @Controller('users')
@@ -9,17 +16,14 @@ export class UsersController {
   getUsers() {
     return this.usersService.getAllUsers();
   }
+
   @Get(':id')
   public findOne(@Param('id', ParseIntPipe) id: number) {
-    return this.usersService.getUserById(id);
+    const res = this.usersService.getUserById(id);
+    return res;
   }
   @Delete(':id')
   public deleteOne(@Param('id', ParseIntPipe) id: number) {
     return this.usersService.deleteUserById(id);
   }
-  @Put(':id')
-  public updateOne(@Param('id', ParseIntPipe) id: number) {
-    return this.usersService.updateUserById(id);
-  }
-
 }
