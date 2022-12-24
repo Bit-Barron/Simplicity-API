@@ -1,4 +1,5 @@
 <h1>Simple Rest Api build with nestJs as Backend and Svelte at Frontend </h1>
+<p>Live: https://simplicity-pnqqa36dd-1bitbaron-gmailcom.vercel.app/users </p>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
