@@ -9,7 +9,7 @@
       <div class="mr-32">GET</div>
       <div class="text-blue-400">/users/1</div>
     </div>
-    <div class="flex mr-16 mt-10 justify-center">
+    <div class="flex mr-16 mt-10 justify-center mb-10">
       <div class="mr-28">DELETE</div>
       <div class="text-blue-400">/users/1</div>
     </div>

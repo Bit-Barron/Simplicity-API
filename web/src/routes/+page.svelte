@@ -43,7 +43,7 @@
 
     <div>
       <div class="text-center mt-20 mr-32 mb-4 text-3xl">When to use</div>
-      <div class="text-center ml-[560px]">
+      <div class="text-center ml-[580px]">
        this Api placeholder is a free online REST API that you can use whenever you need some fake data.
         It can be in a README on <br />
         <span class="mr-20"
@@ -55,4 +55,5 @@
     <Resources />
     <Routes />
   </div>
+  <div class="flex justify-center mt-10">Coded and maintained with ❤️ by <span class="text-blue-500 ml-2 mr-2">Bit-Barron</span> © 2022</div>
 </div>
