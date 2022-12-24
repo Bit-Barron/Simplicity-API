@@ -2,6 +2,8 @@
   import Navbar from '$lib/elements/Navbar.svelte';
   import Tryit from '$lib/elements/Tryit.svelte';
   import axios from 'axios';
+  import Routes from '$lib/elements/Routes.svelte';
+  import Resources from '$lib/elements/Resources.svelte';
 
   let showclass = false;
   let data = [];
@@ -39,29 +41,18 @@
       {showclass ? fetch('http://localhost:3000/users/1') : ''}
     </div>
 
-    <!-- response -->
     <div>
-      <div class="text-center mt-20 mr-40 mb-4 text-3xl">When to use</div>
-      <div class="text-center ml-[520px]">
+      <div class="text-center mt-20 mr-32 mb-4 text-3xl">When to use</div>
+      <div class="text-center ml-[560px]">
         ApiPlaceholder is a free online REST API that you can use whenever you need some fake data.
-        It can be in a README on <br /> GitHub, for a demo on CodeSandbox, in code examples on Stack
-        Overflow, ...or simply to test things locally.
+        It can be in a README on <br />
+        <span class="mr-20"
+          >GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to
+          test things locally.</span
+        >
       </div>
     </div>
-    <div>
-      <div class="text-center mt-20 mr-56 mb-4 text-3xl">Resources</div>
-      <div class="mt-6 text-center ml-10">
-        JSONPlaceholder comes with a set of 6 common resources:
-      </div>
-      <div class="flex mt-10 justify-center">
-        <div class="text-blue-500 mr-40 ">/Users</div>
-        <div>3 Users</div>
-      </div>
-      <div class="flex  justify-center">
-        <div class="text-blue-500 mr-40 ">/Posts</div>
-        <div>10 Posts</div>
-      </div>
-    </div>
-    <div class="flex justify-center text-2xl">Routes</div>
+    <Resources />
+    <Routes />
   </div>
 </div>
