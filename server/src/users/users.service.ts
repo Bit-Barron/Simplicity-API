@@ -1,12 +1,23 @@
 import { Injectable } from '@nestjs/common';
 
+
+const names  = [
+  "new",
+  "old",
+  "big",
+  "small",
+  "medium",
+  "tiny",
+
+]
+
 const users = [
   {
     id: 1,
-    name: 'John Doe',
+    name: 'John Does',
     email: `${name}@gmail.com`,
-    website: 'https://www.doe.com',
-    username: 'doe',
+    website: `https://www.${name}.com`,
+    username: `${name}${Math.floor(Math.random() * 1000)}`,
     createdAt: new Date(),
     addresses: {
       street: 'GENTLE RAIN DRIVE, MARANA',
@@ -18,7 +29,7 @@ const users = [
     id: 2,
     name: 'Jane',
     email: `${name}@gmail.com`,
-    website: 'https://www.jane.com',
+    website: `https://www.${name}.com`,
     username: 'jane012',
     createdAt: new Date(),
     addresses: {
@@ -31,7 +42,7 @@ const users = [
     id: 3,
     name: 'Tomas',
     email: `${name}@gmail.com`,
-    website: 'https://www.tomas.com',
+    website: `https://www.${name}.com`,
     username: 'tomasshell',
     createdAt: new Date(),
     addresses: {
@@ -44,7 +55,7 @@ const users = [
     id: 4,
     name: 'victor',
     email: `${name}@gmail.com`,
-    website: 'https://www.victor.com',
+    website: `https://www.${name}.com`,
     username: 'victorBig',
     createdAt: new Date(),
     addresses: {
@@ -57,7 +68,7 @@ const users = [
     id: 5,
     name: 'jose',
     email: `${name}@gmail.com`,
-    website: 'https://www.luis.com',
+    website: `https://www.${name}.com`,
     username: 'luisNew',
     createdAt: new Date(),
     addresses: {
@@ -69,8 +80,8 @@ const users = [
   {
     id: 6,
     name: 'luis',
-    email: 'luis@gmail.com',
-    website: 'https://www.luis.com',
+    email: `${name}@gmail.com`,
+    website: `https://www.${name}.com`,
     username: 'luisNew',
     createdAt: new Date(),
     addresses: {
@@ -81,8 +92,8 @@ const users = [
   },{
     id: 7,
     name: 'luis',
-    email: 'luis@gmail.com',
-    website: 'https://www.luis.com',
+    email: `${name}@gmail.com`,
+    website: `https://www.${name}.com`,
     username: 'luisNew',
     createdAt: new Date(),
     addresses: {
@@ -93,8 +104,8 @@ const users = [
   },{
     id: 8,
     name: 'luis',
-    email: 'luis@gmail.com',
-    website: 'https://www.luis.com',
+    email: `${name}@gmail.com`,
+    website: `https://www.${name}.com`,
     username: 'luisNew',
     createdAt: new Date(),
     addresses: {
