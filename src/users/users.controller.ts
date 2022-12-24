@@ -17,5 +17,9 @@ export class UsersController {
   public deleteOne(@Param('id', ParseIntPipe) id: number) {
     return this.usersService.deleteUserById(id);
   }
+  @Put(':id')
+  public updateOne(@Param('id', ParseIntPipe) id: number) {
+    return this.usersService.updateUserById(id);
+  }
 
 }

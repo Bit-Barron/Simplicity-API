@@ -8,6 +8,11 @@ const users = [
     website: 'https://www.doe.com',
     username: 'doe',
     createdAt: new Date(),
+    addresses: {
+      street: 'GENTLE RAIN DRIVE, MARANA',
+      city: 'LOCH NESS ROAD',
+      suite: '13',
+    },
   },
   {
     id: 2,
@@ -16,6 +21,11 @@ const users = [
     website: 'https://www.jane.com',
     username: 'jane012',
     createdAt: new Date(),
+    addresses: {
+      street: 'MELODY DRIVE',
+      city: 'METAIRIE',
+      suite: '23',
+    },
   },
   {
     id: 3,
@@ -24,6 +34,11 @@ const users = [
     website: 'https://www.tomas.com',
     username: 'tomasshell',
     createdAt: new Date(),
+    addresses: {
+      street: 'CHARDONNAY DRIVE',
+      city: 'MACUNGIE',
+      suite: '435',
+    },
   },
   {
     id: 4,
@@ -32,13 +47,24 @@ const users = [
     website: 'https://www.victor.com',
     username: 'victorBig',
     createdAt: new Date(),
-  }, {
+    addresses: {
+      street: 'SUNFLOWER',
+      city: 'LAKE FOREST',
+      suite: '466',
+    },
+  },
+  {
     id: 3,
     name: 'luis',
     email: 'luis@gmail.com',
     website: 'https://www.luis.com',
     username: 'luisNew',
     createdAt: new Date(),
+    addresses: {
+      street: 'THREE STARS ROAD',
+      city: 'EDMOND OK',
+      suite: '098',
+    },
   },
 ];
 @Injectable()
@@ -52,6 +78,9 @@ export class UsersService {
   }
   deleteUserById(id: number) {
     if (id > 4) return 'Only have ' + users.length + ' users';
-    return users.find((user) => user.id === id && users.splice(users.indexOf(user), 1));
+    return users.find(
+      (user) => user.id === id && users.splice(users.indexOf(user), 1),
+    );
   }
+  updateUserById(id: number) {}
 }
