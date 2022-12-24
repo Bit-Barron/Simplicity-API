@@ -67,7 +67,7 @@ const users = [
     },
   },
   {
-    id: 3,
+    id: 6,
     name: 'luis',
     email: 'luis@gmail.com',
     website: 'https://www.luis.com',
@@ -80,7 +80,7 @@ const users = [
     },
   },
   {
-    id: 3,
+    id: 7,
     name: 'vic',
     email: 'vic@gmail.com',
     website: 'https://www.vic.com',
@@ -93,7 +93,7 @@ const users = [
     },
   },
   {
-    id: 3,
+    id: 8,
     name: 'luis',
     email: 'luis@gmail.com',
     website: 'https://www.luis.com',
