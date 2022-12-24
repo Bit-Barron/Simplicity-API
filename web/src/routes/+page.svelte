@@ -1,8 +1,16 @@
-<script>
+<script lang="ts">
   import Navbar from '$lib/elements/Navbar.svelte';
   import Tryit from '$lib/elements/Tryit.svelte';
+  import axios from 'axios';
 
-    let showclass = false
+  let showclass = false;
+  let data = [];
+
+  const handler = async () => {
+    const response = await axios.get('http://localhost:3000/users/1');
+    data = response.data
+    console.log(data);
+  };
 </script>
 
 <div>
@@ -21,14 +29,16 @@
     <Tryit />
     <div class="flex justify-center">
       <button
-        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-6 mr-52 {showclass
-          ? 'text-green-500'
-          : 'text-red-500'}}"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-6 mr-[190px] "
         on:click={() => (showclass = !showclass)}
       >
         Run script
       </button>
     </div>
+    <div class={showclass ? 'bg-[#222526] p-6 rounded-lg w-96 ml-[1120px] mt-4' : ''}>
+      {showclass ? fetch('http://localhost:3000/users/1') : ''}
+    </div>
+
     <!-- response -->
     <div>
       <div class="text-center mt-20 mr-40 mb-4 text-3xl">When to use</div>
