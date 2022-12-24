@@ -29,16 +29,18 @@
     <!-- response -->
     <div>
       <div class="text-center mt-20 mr-40 mb-4 text-3xl">When to use</div>
-      <div class="text-center ml-[470px]">
-        ApiPlace is a free online REST API that you can use whenever you need some fake data. It can
+      <div class="text-center ml-[520px]">
+        ApiPlaceholder is a free online REST API that you can use whenever you need some fake data. It can
         be in a README on <br /> GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow,
         ...or simply to test things locally.
       </div>
-    </div>dasd
+    </div>
     <div>
       <div class="text-center mt-20 mr-60 mb-4 text-3xl">Resources</div>
-      <div class="mt-6 text-center ml-10">JSONPlaceholder comes with a set of 6 common resources: </div>
-      <div class="text-blue-500 ">/Posts</div>
+      <div class="mt-6 text-center ml-10">
+        JSONPlaceholder comes with a set of 6 common resources:
+      </div>
+      <div class="text-blue-500 flex justify-center mr-80 mt-10">/Posts</div>
     </div>
   </div>
 </div>
