@@ -11,7 +11,7 @@ const users = [
     addresses: {
       street: 'GENTLE RAIN DRIVE, MARANA',
       city: 'LOCH NESS ROAD',
-      suite: '13',
+      suite: `${Math.floor(Math.random() * 30)}`,
     },
   },
   {
@@ -24,7 +24,7 @@ const users = [
     addresses: {
       street: 'MELODY DRIVE',
       city: 'METAIRIE',
-      suite: '23',
+      suite: `${Math.floor(Math.random() * 30)}`,
     },
   },
   {
@@ -37,7 +37,7 @@ const users = [
     addresses: {
       street: 'CHARDONNAY DRIVE',
       city: 'MACUNGIE',
-      suite: '435',
+      suite: `${Math.floor(Math.random() * 30)}`,
     },
   },
   {
@@ -50,7 +50,7 @@ const users = [
     addresses: {
       street: 'SUNFLOWER',
       city: 'LAKE FOREST',
-      suite: '466',
+      suite: `${Math.floor(Math.random() * 30)}`,
     },
   },
   {
@@ -63,7 +63,7 @@ const users = [
     addresses: {
       street: 'THREE STARS ROAD',
       city: 'EDMOND OK',
-      suite: '098',
+      suite: `${Math.floor(Math.random() * 300)}`,
     },
   },
   {
@@ -74,9 +74,9 @@ const users = [
     username: `luis${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
-      street: 'THREE STARS ROAD',
-      city: 'EDMOND OK',
-      suite: '098',
+      street: 'HIGHLAND ',
+      city: 'JONESBORO',
+      suite: `${Math.floor(Math.random() * 300)}`,
     },
   },
   {
@@ -87,22 +87,48 @@ const users = [
     username: `vic${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
-      street: 'THREE STARS ROAD',
-      city: 'EDMOND OK',
-      suite: '098',
+      street: 'SHILOH DR',
+      city: 'FAYETTEVILLE',
+      suite: `${Math.floor(Math.random() * 300)}`,
     },
   },
   {
     id: 8,
-    name: 'luis',
-    email: 'luis@gmail.com',
-    website: 'https://www.luis.com',
-    username: 'luisNew',
+    name: 'lena',
+    email: 'lena@gmail.com',
+    website: 'https://www.lena.com',
+    username: `lena${Math.floor(Math.random() * 300)}`,
     createdAt: new Date(),
     addresses: {
       street: 'THREE STARS ROAD',
       city: 'EDMOND OK',
-      suite: '098',
+      suite: `${Math.floor(Math.random() * 300)}`,
+    },
+  },
+  {
+    id: 8,
+    name: 'vegeta',
+    email: 'vegeta@gmail.com',
+    website: 'https://www.vegeta.com',
+    username: `vegeta${Math.floor(Math.random() * 300)}`,
+    createdAt: new Date(),
+    addresses: {
+      street: 'EAST VALLEY BLVD',
+      city: 'ALHAMBRA',
+      suite: `${Math.floor(Math.random() * 300)}`,
+    },
+  },
+  {
+    id: 8,
+    name: 'halulia',
+    email: 'halulia@gmail.com',
+    website: 'https://www.halulia.com',
+    username: `halulia${Math.floor(Math.random() * 300)}`,
+    createdAt: new Date(),
+    addresses: {
+      street: 'BRAND',
+      city: 'GLENDALE',
+      suite: `${Math.floor(Math.random() * 300)}`,
     },
   },
 ];
